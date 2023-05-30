@@ -1,5 +1,5 @@
-export const Input = ({ type, place, name, id}) => {
+export const Input = ({ type, place, name, id, valor, ...rest}) => {
     return (
-        <input placeholder = {place} type = { type } name = { name } id = {id} />
+        <input placeholder = {place} type = { type } name = { name } id = {id} value={valor} {...rest}/>
     )
 }

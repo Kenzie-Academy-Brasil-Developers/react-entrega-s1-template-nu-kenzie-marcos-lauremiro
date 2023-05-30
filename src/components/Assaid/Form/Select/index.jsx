@@ -1,10 +1,10 @@
 import { Option } from "./Option"
 
-export const Select = ({ name, id}) => {
+export const Select = ({ name, id, valor}) => {
     return(
-        <select name={name} id={id}>
-            <Option value={''} text={''}/> 
-            <Option value={''} text={''}/> 
+        <select value={valor} name={name} id={id}>
+            <Option value={'Entrada'} text={'Entrada'}/> 
+            <Option value={'Saida'} text={'Saida'}/> 
         </select>
     )
 }
