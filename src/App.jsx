@@ -3,6 +3,7 @@ import { Resetstaled } from './styles/ResetStaled'
 import { GlobalStyled } from './styles/GlobalStyled'
 import { Header } from './components/Header'
 import { Assid } from './components/Assaid'
+import { SectionCards } from './components/ScectionList'
 
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
       <Header />
       <main>
         <Assid />
+        <SectionCards />
       </main>
     </>
   )
