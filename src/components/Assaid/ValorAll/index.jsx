@@ -1,4 +1,4 @@
-export const ValorAll = ({valor}) => {
+export const ValorAll = ({value}) => {
     return (
         <div className="Valor-total__container">
             <div>
@@ -6,7 +6,7 @@ export const ValorAll = ({valor}) => {
                 <span></span>
             </div>
             <div className="valor-total">
-                <span>R$ {valor}</span>
+                <span>R$ {value}</span>
             </div>
         </div>
     )

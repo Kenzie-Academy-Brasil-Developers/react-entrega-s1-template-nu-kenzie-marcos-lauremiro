@@ -7,13 +7,16 @@ import { SectionCards } from './components/ScectionList'
 
 
 function App() {
+
+  const [list, setList] = useState([{descript:'carro', value: '400', type: 'saida'},{descript:'carr2', value: '4002', type: 'entrada'}])
+
   return (
     <>
       <Resetstaled />
       <GlobalStyled />
       <Header />
       <main>
-        <Assid />
+        <Assid list={list}  setList={setList}/>
         <SectionCards />
       </main>
     </>

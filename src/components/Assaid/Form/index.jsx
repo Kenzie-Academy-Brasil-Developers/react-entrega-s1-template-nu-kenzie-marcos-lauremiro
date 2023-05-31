@@ -4,7 +4,7 @@ import { Select } from "./Select"
 import { ButtonForm } from "./button"
 import { Label } from "./label"
 
-export const Form = () => {
+export const Form = ({list , setList}) => {
 
     const [descript, setdescript] = useState('')
     const [value, setValue] = useState('')
@@ -12,7 +12,13 @@ export const Form = () => {
 
     const submit = (e) => {
         e.preventDefault()
-        console.log({type, value, descript})
+
+        const data = {descript, value, type}
+
+        setList([...list, data])
+
+        //setList((oldList) => {return [...oldList, data]})
+
         setType('')
         setValue('')
         setdescript('')
@@ -27,7 +33,7 @@ export const Form = () => {
             </div>
             <div className="valor-form">
                 <Label forLabel={'Valor'} text={'Valor {R$}'} />
-                <Input type={'number'} place={'1'} name={'valor'} id={'Valor'} value={value} onChange={(e) => setValue(e.target.value)} />
+                <Input type={'number'} place={'0'} name={'valor'} id={'Valor'} value={value} onChange={(e) => setValue(e.target.value)} />
             </div>
             <div className="tipo_valor">
                 <Label forLabel={'Tipo'} text={'Tipo de valor'} />
