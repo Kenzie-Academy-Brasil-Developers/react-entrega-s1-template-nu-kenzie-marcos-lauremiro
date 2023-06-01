@@ -3,6 +3,7 @@ import { Input } from "./Input"
 import { Select } from "./Select"
 import { ButtonForm } from "./button"
 import { Label } from "./label"
+import { v4  as  uuidv4 }  from  'uuid';
 
 export const Form = ({list , setList}) => {
 
@@ -13,7 +14,7 @@ export const Form = ({list , setList}) => {
     const submit = (e) => {
         e.preventDefault()
 
-        const data = {descript, value, type}
+        const data = {descript, value, type, id: uuidv4()}
 
         setList([...list, data])
 

@@ -1,9 +1,9 @@
 import { CardList } from "./CardList"
 
-export const SectionCards = () => {
+export const SectionCards = ({list, setList}) => {
     return(
         <section>
-            <CardList />
+            <CardList list={list} setList={setList}/>
         </section>
     )
 }
