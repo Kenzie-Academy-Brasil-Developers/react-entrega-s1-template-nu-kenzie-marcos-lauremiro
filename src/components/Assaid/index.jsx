@@ -6,11 +6,23 @@ import { AsideStaled } from "../../styles/AsaidStyled"
 export const Assid = ({list, setList}) => {
     const sumValue = list.reduce((acc, sum) => {
         if(sum.type == 'saida'){
-            return acc - Number(sum.value)
+            const sumAll = acc - Number(sum.value)
+            return (sumAll.toLocaleString('pt-BR', {
+                style: 'currency',
+                currency: 'BRL'
+            }))
         }else if(sum.type == 'entrada'){
-            return acc + Number(sum.value)
+            const sumAll = acc + Number(sum.value)
+            return (sumAll.toLocaleString('pt-BR', {
+                style: 'currency',
+                currency: 'BRL'
+            }))
         }else if(sum.type == ''){
-            return acc + Number(sum.value)
+            const sumAll = acc + Number(sum.value)
+            return (sumAll.toLocaleString('pt-BR', {
+                style: 'currency',
+                currency: 'BRL'
+            }))
         }
     },0)
 

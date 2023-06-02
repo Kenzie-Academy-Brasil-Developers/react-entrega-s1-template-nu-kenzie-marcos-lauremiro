@@ -28,5 +28,9 @@ export const AsideStaled = styled.aside`
     }
     .valor-total{
         width: 60%;
+
+        color: var(--color-primary);
+
+        font-weight: bold;
     }
 `

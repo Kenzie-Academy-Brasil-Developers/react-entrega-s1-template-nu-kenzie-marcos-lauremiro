@@ -1,4 +1,5 @@
-export const Card = ({ listItens, delet}) => {
+export const Card = ({ listItens, delet}) => {     
+
     return(
         <li>
             <div className="side_left">
@@ -6,7 +7,10 @@ export const Card = ({ listItens, delet}) => {
                 <span className="text-2-style"> {listItens.type} </span>
             </div>
             <div className="side_right">
-                <span className="text-1-style"> {listItens.value} </span>
+                <span className="text-1-style"> {Number(listItens.value).toLocaleString('pt-BR', {
+                style: 'currency',
+                currency: 'BRL'
+            })} </span>
                 <button className="text-3-style" onClick={() => delet(listItens.id)}> Excluir </button>
             </div>
         </li>
