@@ -4,6 +4,7 @@ import { Select } from "./Select"
 import { ButtonForm } from "./button"
 import { Label } from "./label"
 import { v4  as  uuidv4 }  from  'uuid';
+import { FormStyled } from "../../../styles/FormStyled"
 
 export const Form = ({list , setList}) => {
 
@@ -26,23 +27,23 @@ export const Form = ({list , setList}) => {
     }
 
     return(
-        <form onSubmit={submit} action="">
+        <FormStyled onSubmit={submit} action="">
             <div className="descricao">
                 <Label forLabel={'descri'} text={'Descrição'} />
                 <Input type={'text'} place={'Digite aqui sua descrição'} name={''} id={'descri'} value={descript} onChange={(e) => setdescript(e.target.value)}/>
-                <p>Ex: Compra de roupas</p>
+                <p className="text-2-style">Ex: Compra de roupas</p>
             </div>
             <div className="valor-form">
                 <Label forLabel={'Valor'} text={'Valor {R$}'} />
-                <Input type={'number'} place={'0'} name={'valor'} id={'Valor'} value={value} onChange={(e) => setValue(e.target.value)} />
+                <Input type={'number'} place={'R$'} name={'valor'} id={'Valor'} value={value} onChange={(e) => setValue(e.target.value)} />
             </div>
             <div className="tipo_valor">
                 <Label forLabel={'Tipo'} text={'Tipo de valor'} />
                 <Select name={'tipo-de-valor'} id={'Tipo'} value={type} onChange={(e) => setType(e.target.value)} />
             </div>
             <div className="button_submit">
-                <ButtonForm className={''}text={'Inserir Valor'}/>
+                <ButtonForm className={'button-1-style text-1-style'}text={'Inserir Valor'}/>
             </div>
-        </form>
+        </FormStyled>
     )
 }

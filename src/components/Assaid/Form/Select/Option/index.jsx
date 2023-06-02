@@ -1,5 +1,5 @@
-export const Option = ({ value, text}) => {
+export const Option = ({ value, text, ...rest}) => {
     return(
-        <option value={value}>{text}</option>
+        <option className="text-1-style" value={value} {...rest}>{text}</option>
     )
 }

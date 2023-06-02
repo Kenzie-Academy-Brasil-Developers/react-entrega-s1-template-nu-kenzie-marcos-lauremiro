@@ -2,12 +2,12 @@ export const Card = ({ listItens, delet}) => {
     return(
         <li>
             <div className="side_left">
-                <h2>{listItens.descript}</h2>
-                <span> {listItens.type} </span>
+                <h2 className="title-3-style">{listItens.descript}</h2>
+                <span className="text-2-style"> {listItens.type} </span>
             </div>
-            <div className="dide_right">
-                <span> {listItens.value} </span>
-                <button onClick={() => delet(listItens.id)}> Excluir </button>
+            <div className="side_right">
+                <span className="text-1-style"> {listItens.value} </span>
+                <button className="text-3-style" onClick={() => delet(listItens.id)}> Excluir </button>
             </div>
         </li>
     )

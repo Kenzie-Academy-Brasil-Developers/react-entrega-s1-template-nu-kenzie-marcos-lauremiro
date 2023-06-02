@@ -84,4 +84,19 @@ export const GlobalStyled = createGlobalStyle`
         text-decoration: none;
         text-transform: none;
     }
+    .input-1-style{
+        background: var(--color-grey-2);
+
+        height: 40px;
+    }
+    .button-1-style{
+        background-color: var(--color-primary);
+
+        width: 100%;
+        height: 2.5rem;
+
+        border-radius: 0.5rem;
+
+        color: var(--color-grey-1);
+    }
 `

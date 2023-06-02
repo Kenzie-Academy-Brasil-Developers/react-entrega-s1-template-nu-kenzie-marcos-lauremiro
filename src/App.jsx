@@ -4,6 +4,7 @@ import { GlobalStyled } from './styles/GlobalStyled'
 import { Header } from './components/Header'
 import { Assid } from './components/Assaid'
 import { SectionCards } from './components/ScectionList'
+import { MainStyled } from './styles/MainStyled'
 
 
 function App() {
@@ -15,10 +16,10 @@ function App() {
       <Resetstaled />
       <GlobalStyled />
       <Header />
-      <main>
+      <MainStyled>
         <Assid list={list}  setList={setList}/>
         <SectionCards list={list} setList={setList}/>
-      </main>
+      </MainStyled>
     </>
   )
 }
