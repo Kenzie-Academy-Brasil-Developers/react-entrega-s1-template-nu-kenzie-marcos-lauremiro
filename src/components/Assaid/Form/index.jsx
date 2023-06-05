@@ -35,7 +35,7 @@ export const Form = ({list , setList}) => {
             </div>
             <div className="valor-form">
                 <Label forLabel={'Valor'} text={'Valor {R$}'} />
-                <Input type={'number'} place={'R$'} name={'valor'} id={'Valor'} value={value} onChange={(e) => setValue(e.target.value)} />
+                <Input type={'number'} place={'R$'} name={'valor'} id={'Valor'} value={value} onChange={(e) => setValue(Number(e.target.value))} />
             </div>
             <div className="tipo_valor">
                 <Label forLabel={'Tipo'} text={'Tipo de valor'} />

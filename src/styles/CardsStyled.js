@@ -21,8 +21,6 @@ export const SectionStyled = styled.section`
         padding: .8rem;
 
         border-radius: 8px;
-
-        border-left: 3px solid var(--color-secondary);
     }
     li > .side_left{
         display: flex;
@@ -40,5 +38,11 @@ export const SectionStyled = styled.section`
         background-color: var(--color-grey-2);
         padding: 0 .5rem; 
         border-radius: 4px;
+    }
+    .entrada{
+        border-left: 3px solid var(--color-secondary);
+    }
+    .saida{
+        border-left: 3px solid var(--color-grey-2 );
     }
 `

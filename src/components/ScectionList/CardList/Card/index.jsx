@@ -1,7 +1,7 @@
-export const Card = ({ listItens, delet}) => {     
+export const Card = ({ listItens, delet, typeColor}) => {     
 
     return(
-        <li>
+        <li className={typeColor}>
             <div className="side_left">
                 <h2 className="title-3-style">{listItens.descript}</h2>
                 <span className="text-2-style"> {listItens.type} </span>

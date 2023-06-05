@@ -13,7 +13,7 @@ export const CardList = ({list, setList}) => {
         <ul>
            {list.map((item) => {
                 console.log(item)
-               return <Card listItens={item} key={item.id} delet={delet}/>
+               return <Card typeColor={item.type} listItens={item} key={item.id} delet={delet}/>
            })}
         </ul>
     )
