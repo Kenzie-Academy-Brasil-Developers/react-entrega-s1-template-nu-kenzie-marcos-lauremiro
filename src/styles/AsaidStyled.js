@@ -27,7 +27,7 @@ export const AsideStaled = styled.aside`
         width: 140%;
     }
     .valor-total{
-        width: 60%;
+        width: 100px;
 
         color: var(--color-primary);
 

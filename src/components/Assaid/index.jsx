@@ -15,7 +15,7 @@ export const Assid = ({list, setList}) => {
     return(
         <AsideStaled >
             <Form list={list} setList={setList}/>
-            <ValorAll value={sumValue} />
+            <ValorAll value={sumValue} list={list}/>
         </AsideStaled>
     )
 }

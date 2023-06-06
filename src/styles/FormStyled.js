@@ -32,4 +32,7 @@ export const FormStyled = styled.form`
     .button_submit{
         
     }
+    .input_padding{
+        padding: 0.8rem;
+    }
 `
